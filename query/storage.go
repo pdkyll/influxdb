@@ -96,6 +96,7 @@ type ReadWindowAggregateSpec struct {
 	Aggregates  []plan.ProcedureKind
 	CreateEmpty bool
 	TimeColumn  string
+	Window      execute.Window
 }
 
 func (spec *ReadWindowAggregateSpec) Name() string {
